@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header';
 import { ScreenHome } from './components/ScreenHome';
 import { ScreenCustomize } from './components/ScreenCustomize';
@@ -206,6 +207,7 @@ export default function App() {
         isOpen={isPricingModalOpen}
         onClose={() => setIsPricingModalOpen(false)}
       />
+      <Analytics />
     </div>
   );
 }
